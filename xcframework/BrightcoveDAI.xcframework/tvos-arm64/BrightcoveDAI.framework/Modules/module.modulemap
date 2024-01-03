@@ -1,0 +1,6 @@
+framework module BrightcoveDAI {
+  umbrella header "BrightcoveDAI.h"
+  export *
+
+  module * { export * }
+}
