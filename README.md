@@ -1,4 +1,4 @@
-# DAI Plugin for Brightcove Player SDK for iOS, version 6.12.7.2564
+# DAI Plugin for Brightcove Player SDK for iOS, version 6.13.0.2599
 
 ## Installation
 
@@ -342,6 +342,45 @@ func updateVideo(_ video: BCOVVideo) -> BCOVVideo {
     }
 }
 ```
+
+### Modifying the IMAStreamRequest
+
+
+The DAI Plugin passes an `IMAStreamRequest` object to a `BCOVDAIPlaybackSessionDelegate` immediately before calling `IMAAdsLoader -requestStreamWithRequest`, allowing the user to first modify the ads request. To receive the ads request callback, create an object that implements the `BCOVDAIPlaybackSessionDelegate` protocol.
+
+    @import BrightcovePlayerSDK;
+    @import BrightcoveDAI;
+
+    @interface MyViewController : UIViewController <BCOVDAIPlaybackSessionDelegate>
+
+Create a `BCOVDAISessionProvider` using either `createDAIPlaybackControllerWithSettings` or `createDAISessionProviderWithSettings`, and provide an NSDictionary of options with an entry having a key of `kBCOVDAIOptionDAIPlaybackSessionDelegateKey` and a value which is your delegate.
+
+    NSDictionary *daiSessionProviderOptions = @{ kBCOVDAIOptionDAIPlaybackSessionDelegateKey: self };
+
+    id<BCOVPlaybackSessionProvider> daiSessionProvider =
+        [sdkManager createDAISessionProviderWithSettings:imaSettings
+                                    adsRenderingSettings:renderSettings
+                                        adsRequestPolicy:adsRequestPolicy
+                                             adContainer:self.playerView.contentOverlayView
+                                          viewController:self
+                                          companionSlots:ni
+                                 upstreamSessionProvider:nil
+                                                 options:daiSessionProviderOptions];
+
+Implement `willCallIMAAdsLoaderRequestAdsWithRequest:` in your `BCOVDAIPlaybackSessionDelegate`.
+
+    - (void)willCallIMAAdsLoaderRequestAdsWithRequest:(IMAStreamRequest *)adsRequest
+    {
+        adsRequest.adTagParameters = @{
+            @"rdp" : @"1",
+            @"myAdTargetingTest": @"1"
+        };
+
+        adsRequest.authToken = @"<your-auth-token>";
+
+        adsRequest.apiKey = @"<your-api-key>";
+    }
+
 
 ### View Strategy
 

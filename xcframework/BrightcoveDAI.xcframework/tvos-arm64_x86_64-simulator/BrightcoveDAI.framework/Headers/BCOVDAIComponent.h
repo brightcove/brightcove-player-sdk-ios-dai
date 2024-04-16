@@ -11,7 +11,7 @@
 #import <BrightcovePlayerSDK/BrightcovePlayerSDK.h>
 
 @class BCOVDAIAdsRequestPolicy;
-@class IMAAdsRenderingSettings, IMASettings;
+@class IMAAdsRenderingSettings, IMASettings, IMAStreamRequest;
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -33,33 +33,6 @@ extern NSString * const kBCOVDAILifecycleEventPropertyKeyAdError;
 
 extern NSString * const kBCOVDAIAdPropertiesKeyIMAAdInstance;
 
-/**
- * The user's option dictionary key to force non-personalized ads.
- */
-extern NSString * const kBCOVDAIOptionDAINonPersonalizedAdsKey;
-
-/**
- * The user's option dictionary key for  TFUA (`Tag For Users under the Age`)
- * parameter .
- */
-extern NSString * const kBCOVDAIOptionDAITagForUsersKey;
-
-/**
- * The user's option dictionary key to notify Google that RDP should be enabled
- * using Google's signal.
- */
-extern NSString * const kBCOVDAIOptionDAIRDPGoogleKey;
-
-/**
- * The user's option dictionary key to notify Google that RDP should be enabled
- * using IAB's signal.
- */
-extern NSString * const kBCOVDAIOptionDAIRDPIABKey;
-
-/**
- * The user's option dictionary key to serve limited ads.
- */
-extern NSString * const kBCOVDAIOptionDAILimitedAdsKey;
 
 /**
  * The dictionary key in the video properties for the VOD content source ID.
@@ -77,20 +50,12 @@ extern NSString * const kBCOVDAIVideoPropertiesKeyVideoId;
 extern NSString * const kBCOVDAIVideoPropertiesKeyAssetKey;
 
 /**
- * The dictionary key in the video properties for the stream request API key.
- */
-extern NSString * const kBCOVDAIVideoPropertiesKeyAPIKey;
-
-/**
- * The dictionary key in the video properties for the stream request authorization token.
- */
-extern NSString * const kBCOVDAIVideoPropertiesKeyAuthToken;
-
-/**
  * The dictionary key in the video properties for the
  * IMA ad display container (IMAAdDisplayContainer *) associated with this ad.
  */
 extern NSString * const kBCOVDAIVideoPropertiesKeyAdDisplayContainer;
+
+extern NSString * const kBCOVDAIOptionDAIPlaybackSessionDelegateKey;
 
 /**
  * Category methods added to BCOVPlayerSDKManager to support DAI.
@@ -147,11 +112,8 @@ extern NSString * const kBCOVDAIVideoPropertiesKeyAdDisplayContainer;
  * or empty.
  * @param options An NSDictionary of DAI options. Can be nil or empty. The only
  *  valid option keys are
- *      kBCOVDAIOptionDAINonPersonalizedAdsKey
- *      kBCOVDAIOptionDAITagForUsersKey
- *      kBCOVDAIOptionDAIRDPGoogleKey
- *      kBCOVDAIOptionDAIRDPIABKey
- *      kBCOVDAIOptionDAILimitedAdsKey
+ *      kBCOVDAIOptionDAIPlaybackSessionDelegateKey
+ * See the "Modifying the IMAStreamRequest" section of the DAI plugin README for more information.
  * @return A new playback controller with the specified parameters.
  */
 - (id<BCOVPlaybackController>)createDAIPlaybackControllerWithSettings:(nullable IMASettings *)settings
@@ -211,11 +173,8 @@ extern NSString * const kBCOVDAIVideoPropertiesKeyAdDisplayContainer;
  * sessions to the returned session provider.
  * @param options An NSDictionary of DAI options. Can be nil or empty. The only
  *  valid option keys are
- *      kBCOVDAIOptionDAINonPersonalizedAdsKey
- *      kBCOVDAIOptionDAITagForUsersKey
- *      kBCOVDAIOptionDAIRDPGoogleKey
- *      kBCOVDAIOptionDAIRDPIABKey
- *      kBCOVDAIOptionDAILimitedAdsKey
+ *      kBCOVDAIOptionDAIPlaybackSessionDelegateKey
+ * See the "Modifying the IMAStreamRequest" section of the DAI plugin README for more information.
  * @return A new BCOVDAISessionProvider with the specified parameters.
  */
 - (id<BCOVPlaybackSessionProvider>)createDAISessionProviderWithSettings:(nullable IMASettings *)settings
@@ -226,6 +185,23 @@ extern NSString * const kBCOVDAIVideoPropertiesKeyAdDisplayContainer;
                                                          companionSlots:(nullable NSArray *)companionSlots
                                                 upstreamSessionProvider:(nullable id<BCOVPlaybackSessionProvider>)provider
                                                                 options:(nullable NSDictionary *)options;
+
+@end
+
+
+/**
+ * A delegate protocol for users of the Brightcove DAI advertising plugin.
+ */
+@protocol BCOVDAIPlaybackSessionDelegate
+
+@optional
+
+/**
+ * Called immediately before the DAI Plugin calls IMAAdsLoader -requestAdsWithRequest:
+ * to allow the user to first modify the ads request object, for example, to change
+ * the vastLoadTimeout property. This method is optional.
+ */
+- (void)willCallIMAAdsLoaderRequestAdsWithRequest:(IMAStreamRequest *)adsRequest;
 
 @end
 
