@@ -1,10 +1,10 @@
-# DAI Plugin for Brightcove Player SDK for iOS, version 7.1.0.7
+# DAI Plugin for Brightcove Player SDK for iOS, version 7.2.0.8
 
 ## Installation
 
 DAI Plugin for Brightcove Player SDK provides a dynamic library framework for installation.
 
-The DAI plugin supports version 3.19.1 of the Google IMA SDK for iOS and version 4.9.1 of the Google IMA SDK for tvOS.
+The DAI plugin supports version 3.27.4 of the Google IMA SDK for iOS and version 4.15.1 of the Google IMA SDK for tvOS.
 
 ### CocoaPods
 
