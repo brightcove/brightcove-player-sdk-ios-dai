@@ -1,4 +1,4 @@
-# DAI Plugin for Brightcove Player SDK for iOS, version 7.2.4.13
+# DAI Plugin for Brightcove Player SDK for iOS, version 7.2.5.15
 
 ## Installation
 
@@ -303,7 +303,26 @@ func willCallIMAAdsLoaderRequestAds(with adsRequest: IMAStreamRequest) {
     adsRequest.apiKey = "<your-api-key>"
 }
 ```
-    
+
+### Replacing Ad Tag Parameters for Live Streams
+
+For live DAI streams, you can dynamically update the ad tag parameters used
+for upcoming ad breaks without restarting the stream. This is useful when
+targeting parameters need to change mid-stream, for example when a new show
+begins on a live channel.
+
+```swift
+// When a new show begins, update targeting for future ad breaks
+let newParams = [
+    "cust_params": "show=sports_hour",
+    "iu": "/21775744923/live/sports"
+]
+playbackController.currentSession?.providerExtension?.dai_replaceAdTagParameters(newParams)
+```
+
+This calls through to `IMAStreamManager -replaceAdTagParameters:` and only
+affects live streams — it is a no-op for VOD.
+
 ### Composing Session Providers
 
 If you are using more than one plugin to the Brightcove Player SDK for iOS that needs to create a customized playback controller, you must instead compose a chain of session providers and pass the final session provider to the `sdkManager.createPlaybackController(withSessionProvider:,viewStrategy:)` method.

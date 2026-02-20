@@ -228,6 +228,17 @@ extern NSString * const kBCOVDAIOptionDAIPlaybackSessionDelegateKey;
  */
 - (void)dai_pause;
 
+/**
+ * Replaces all of the ad tag parameters used for upcoming ad requests
+ * for a live stream. Has no effect on VOD streams.
+ *
+ * Call this method whenever targeting parameters need to change mid-stream,
+ * for example when a new show begins on a live channel.
+ *
+ * @param adTagParameters The new ad tag parameters for upcoming ad breaks.
+ */
+- (void)dai_replaceAdTagParameters:(NSDictionary<NSString *, NSString *> *)adTagParameters;
+
 @end
 
 NS_ASSUME_NONNULL_END
