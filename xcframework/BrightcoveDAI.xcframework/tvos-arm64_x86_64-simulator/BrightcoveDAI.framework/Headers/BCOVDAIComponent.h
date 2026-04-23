@@ -58,6 +58,27 @@ extern NSString * const kBCOVDAIVideoPropertiesKeyAdDisplayContainer;
 extern NSString * const kBCOVDAIOptionDAIPlaybackSessionDelegateKey;
 
 /**
+ * Option key (NSNumber boolean) controlling automatic DAI session recovery.
+ *
+ * When enabled, the DAI session provider observes the current session for
+ * terminal playback failures (`kBCOVPlaybackSessionLifecycleEventFail`,
+ * `kBCOVPlaybackSessionLifecycleEventFailedToPlayToEndTime`),
+ * AVAudioSession media-services-reset notifications, and foreground
+ * transitions after a long background. When one fires, the provider
+ * rebuilds its internal IMA state and the shared AVPlayer, then asks the
+ * playback controller to re-issue the session chain so playback resumes
+ * with a fresh stream. Recovery is gated on network reachability and a
+ * short cooldown.
+ *
+ * This is primarily intended for Live DAI, where stitched ad URLs have a
+ * short TTL and can become unplayable after long periods of inactivity
+ * (device sleep during an ad break, extended network outages, etc.).
+ *
+ * Default is YES.
+ */
+extern NSString * const kBCOVDAIOptionAutomaticRecoveryEnabledKey;
+
+/**
  * Category methods added to BCOVPlayerSDKManager to support DAI.
  */
 @interface BCOVPlayerSDKManager (BCOVDAIAdditions)
