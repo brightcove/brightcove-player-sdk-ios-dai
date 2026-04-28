@@ -1,4 +1,4 @@
-# DAI Plugin for Brightcove Player SDK for iOS, version 7.2.8.30
+# DAI Plugin for Brightcove Player SDK for iOS, version 7.2.9.31
 
 ## Installation
 
