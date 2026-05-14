@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/BrightcoveDAI.framework/BrightcoveDAI</key>
 		<data>
-		OnByQT3koBZhI1nVEmnThJsSUVU=
+		KmZnqSBcODFlnREPlfjY8cWXaOc=
 		</data>
 		<key>ios-arm64/BrightcoveDAI.framework/Headers/BCOVDAIAdsRequestPolicy.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>ios-arm64/BrightcoveDAI.framework/Headers/BCOVDAIComponent.h</key>
 		<data>
-		o9vDSgixClIr1MadTudG71bjYS4=
+		6MMbhPjroAOvn5QeNRvU/4PmMNM=
 		</data>
 		<key>ios-arm64/BrightcoveDAI.framework/Headers/BrightcoveDAI.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>ios-arm64/BrightcoveDAI.framework/Info.plist</key>
 		<data>
-		4xa+ewb6LhXix+trhLlbA4QNW+M=
+		7cI4rvPuxv76o1t6U7mXO7j6JPs=
 		</data>
 		<key>ios-arm64/BrightcoveDAI.framework/Modules/module.modulemap</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BrightcoveDAI.framework/BrightcoveDAI</key>
 		<data>
-		u6lON2R8kqqCfWZRawk7pMDl45U=
+		V513UCqMebn6rQl8sH9kLRXMkJY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BrightcoveDAI.framework/Headers/BCOVDAIAdsRequestPolicy.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BrightcoveDAI.framework/Headers/BCOVDAIComponent.h</key>
 		<data>
-		o9vDSgixClIr1MadTudG71bjYS4=
+		6MMbhPjroAOvn5QeNRvU/4PmMNM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BrightcoveDAI.framework/Headers/BrightcoveDAI.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/BrightcoveDAI.framework/Info.plist</key>
 		<data>
-		hA93DHi6STl7J80BQBDovSvxFfw=
+		rWgV1NM2JLvKyOlWJjh9lbhPGnw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/BrightcoveDAI.framework/Modules/module.modulemap</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>tvos-arm64/BrightcoveDAI.framework/BrightcoveDAI</key>
 		<data>
-		ucVR7FmNbveUw0oH1h4aA5Oj2oE=
+		2yMHOoYb8gbTC37VKu78BTnTodM=
 		</data>
 		<key>tvos-arm64/BrightcoveDAI.framework/Headers/BCOVDAIAdsRequestPolicy.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>tvos-arm64/BrightcoveDAI.framework/Headers/BCOVDAIComponent.h</key>
 		<data>
-		o9vDSgixClIr1MadTudG71bjYS4=
+		6MMbhPjroAOvn5QeNRvU/4PmMNM=
 		</data>
 		<key>tvos-arm64/BrightcoveDAI.framework/Headers/BrightcoveDAI.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>tvos-arm64/BrightcoveDAI.framework/Info.plist</key>
 		<data>
-		b0Yvxseq1IjIZyBxII8swrinm4I=
+		RlKqeepZV8ly6oD2EGimT7uiCQY=
 		</data>
 		<key>tvos-arm64/BrightcoveDAI.framework/Modules/module.modulemap</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/BrightcoveDAI.framework/BrightcoveDAI</key>
 		<data>
-		D90SBE7DqZZnjz0T/G6L7reWLmk=
+		gCA3xazNUXyTwu66mE1NFN9cxP8=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/BrightcoveDAI.framework/Headers/BCOVDAIAdsRequestPolicy.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/BrightcoveDAI.framework/Headers/BCOVDAIComponent.h</key>
 		<data>
-		o9vDSgixClIr1MadTudG71bjYS4=
+		6MMbhPjroAOvn5QeNRvU/4PmMNM=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/BrightcoveDAI.framework/Headers/BrightcoveDAI.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/BrightcoveDAI.framework/Info.plist</key>
 		<data>
-		/HcwRzA0lAwk9quchw6tTN+/lqo=
+		84GmO5ePJPAL+qjUTCvqvKBHE6U=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/BrightcoveDAI.framework/Modules/module.modulemap</key>
 		<data>
@@ -107,11 +107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OnByQT3koBZhI1nVEmnThJsSUVU=
+			KmZnqSBcODFlnREPlfjY8cWXaOc=
 			</data>
 			<key>hash2</key>
 			<data>
-			BYrGXi2eqePaUgaWy17F2BF0b58zn9f8rQ7GKTOEWEU=
+			JM3IQpBrw+dH3L6HDbRlQ9lXMYcv3hbqTaah+thTcDQ=
 			</data>
 		</dict>
 		<key>ios-arm64/BrightcoveDAI.framework/Headers/BCOVDAIAdsRequestPolicy.h</key>
@@ -129,11 +129,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o9vDSgixClIr1MadTudG71bjYS4=
+			6MMbhPjroAOvn5QeNRvU/4PmMNM=
 			</data>
 			<key>hash2</key>
 			<data>
-			BmO9PRSxuftvf9ESppuT7lWBc6yIk1iQXlhlN2qTJPk=
+			sqSeVHvVUrwCYy821On9qTeNhPZAUv4bnWDFuh47Eo4=
 			</data>
 		</dict>
 		<key>ios-arm64/BrightcoveDAI.framework/Headers/BrightcoveDAI.h</key>
@@ -151,11 +151,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4xa+ewb6LhXix+trhLlbA4QNW+M=
+			7cI4rvPuxv76o1t6U7mXO7j6JPs=
 			</data>
 			<key>hash2</key>
 			<data>
-			8kavuEM9BWZlvHDN6XSFoRHSHno4ha+ObsfUdHV4ZKY=
+			++q4v6IW2B8LeATfiCukvYG/9mZRrh9k3uuNnGQ5SIk=
 			</data>
 		</dict>
 		<key>ios-arm64/BrightcoveDAI.framework/Modules/module.modulemap</key>
@@ -173,11 +173,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u6lON2R8kqqCfWZRawk7pMDl45U=
+			V513UCqMebn6rQl8sH9kLRXMkJY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZJsXTIJdIiIgOkEUDbQgY21Yu/mwJ6pylNlWldhIkGw=
+			f7gVUdVvxwTlF5oimxwbzIxbDqczDUl+81yTi1bsCWM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BrightcoveDAI.framework/Headers/BCOVDAIAdsRequestPolicy.h</key>
@@ -195,11 +195,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o9vDSgixClIr1MadTudG71bjYS4=
+			6MMbhPjroAOvn5QeNRvU/4PmMNM=
 			</data>
 			<key>hash2</key>
 			<data>
-			BmO9PRSxuftvf9ESppuT7lWBc6yIk1iQXlhlN2qTJPk=
+			sqSeVHvVUrwCYy821On9qTeNhPZAUv4bnWDFuh47Eo4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BrightcoveDAI.framework/Headers/BrightcoveDAI.h</key>
@@ -217,11 +217,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hA93DHi6STl7J80BQBDovSvxFfw=
+			rWgV1NM2JLvKyOlWJjh9lbhPGnw=
 			</data>
 			<key>hash2</key>
 			<data>
-			tnFXgTDzJdlJvHd/ASK7m0PxRjoxLwb79lHxygthDi8=
+			KkHp/MT7Cejml4ml8QjEu7T7qItwPILCwI9LeeUKb3A=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/BrightcoveDAI.framework/Modules/module.modulemap</key>
@@ -239,11 +239,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ucVR7FmNbveUw0oH1h4aA5Oj2oE=
+			2yMHOoYb8gbTC37VKu78BTnTodM=
 			</data>
 			<key>hash2</key>
 			<data>
-			roL2frH9vX1Zvs4XEAamMuOHXMyV3T9Yc2C+L37TGHM=
+			Jxb9kKb8JXICtXX5hXda72709a3HJKcbrrePZsTvgXM=
 			</data>
 		</dict>
 		<key>tvos-arm64/BrightcoveDAI.framework/Headers/BCOVDAIAdsRequestPolicy.h</key>
@@ -261,11 +261,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o9vDSgixClIr1MadTudG71bjYS4=
+			6MMbhPjroAOvn5QeNRvU/4PmMNM=
 			</data>
 			<key>hash2</key>
 			<data>
-			BmO9PRSxuftvf9ESppuT7lWBc6yIk1iQXlhlN2qTJPk=
+			sqSeVHvVUrwCYy821On9qTeNhPZAUv4bnWDFuh47Eo4=
 			</data>
 		</dict>
 		<key>tvos-arm64/BrightcoveDAI.framework/Headers/BrightcoveDAI.h</key>
@@ -283,11 +283,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			b0Yvxseq1IjIZyBxII8swrinm4I=
+			RlKqeepZV8ly6oD2EGimT7uiCQY=
 			</data>
 			<key>hash2</key>
 			<data>
-			GtE4VMtiN7Yv7eEOkpsVFwZ/z+eRsNNoNHjrBQMBYz8=
+			PmW/58ejvEVfZzKbaVPknbXt4B3mM4YmG0DjVg4txCQ=
 			</data>
 		</dict>
 		<key>tvos-arm64/BrightcoveDAI.framework/Modules/module.modulemap</key>
@@ -305,11 +305,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D90SBE7DqZZnjz0T/G6L7reWLmk=
+			gCA3xazNUXyTwu66mE1NFN9cxP8=
 			</data>
 			<key>hash2</key>
 			<data>
-			SHxrTPyckMwF5ARK/kPTcQuc7ovKNzEcSVnVKTfpc1o=
+			6hkCx063yHsSATmYp97qAivQgtGKnwDuy+NooB+pdx4=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/BrightcoveDAI.framework/Headers/BCOVDAIAdsRequestPolicy.h</key>
@@ -327,11 +327,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o9vDSgixClIr1MadTudG71bjYS4=
+			6MMbhPjroAOvn5QeNRvU/4PmMNM=
 			</data>
 			<key>hash2</key>
 			<data>
-			BmO9PRSxuftvf9ESppuT7lWBc6yIk1iQXlhlN2qTJPk=
+			sqSeVHvVUrwCYy821On9qTeNhPZAUv4bnWDFuh47Eo4=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/BrightcoveDAI.framework/Headers/BrightcoveDAI.h</key>
@@ -349,11 +349,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/HcwRzA0lAwk9quchw6tTN+/lqo=
+			84GmO5ePJPAL+qjUTCvqvKBHE6U=
 			</data>
 			<key>hash2</key>
 			<data>
-			THWZUttQRdVAYvhvNWhSZ/WPiZbJkxgAdJ4CDISakV8=
+			KlDaDUOc1298uEH9sLQ4Nav6SmCkrhUsu/tl68SPskk=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/BrightcoveDAI.framework/Modules/module.modulemap</key>
