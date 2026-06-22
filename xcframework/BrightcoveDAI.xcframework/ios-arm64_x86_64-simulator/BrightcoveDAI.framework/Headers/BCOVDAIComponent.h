@@ -79,43 +79,6 @@ extern NSString * const kBCOVDAIOptionDAIPlaybackSessionDelegateKey;
 extern NSString * const kBCOVDAIOptionAutomaticRecoveryEnabledKey;
 
 /**
- * Option key (NSNumber boolean) opting into a workaround for an AVPlayer
- * regression on tvOS 26.x.
- *
- * On affected tvOS releases, the audio render chain fails to hand off across
- * HLS discontinuities (ad-pod boundaries) when a legible media-selection
- * track is engaged at the moment of teardown. The user-visible symptom is
- * a frozen video frame with audio cut off, while captions continue to
- * advance — for some players, indefinitely.
- *
- * When enabled, the DAI session deselects the legible track ~1.5 seconds
- * before each upcoming HLS discontinuity and reselects the previously
- * selected option ~3 seconds after the boundary has been crossed. Upcoming
- * boundaries are discovered by reading AVFoundation's own logs via
- * `OSLogStore` (public API, current-process scope only). The flag has no
- * effect on tvOS versions older than 26.0 or on iOS.
- *
- * Caveats:
- *   - Closed captions briefly disappear (~4-5s) around each discontinuity.
- *   - The mechanism depends on internal AVFoundation log strings; if Apple
- *     changes them in a future tvOS, the workaround silently no-ops. There
- *     is no behavioral regression in that case — playback degrades back to
- *     the pre-workaround behavior of that tvOS version.
- *
- * Consumers are expected to gate this themselves based on the current
- * `tvOS` version so it stops being applied once Apple ships a fix:
- *
- *     #if TARGET_OS_TV
- *     if (@available(tvOS 26.0, *)) {
- *         options[kBCOVDAIOptionTVOS26AdBreakFreezeWorkaroundEnabledKey] = @YES;
- *     }
- *     #endif
- *
- * Default is NO.
- */
-extern NSString * const kBCOVDAIOptionTVOS26AdBreakFreezeWorkaroundEnabledKey;
-
-/**
  * Category methods added to BCOVPlayerSDKManager to support DAI.
  */
 @interface BCOVPlayerSDKManager (BCOVDAIAdditions)
